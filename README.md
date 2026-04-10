@@ -1,17 +1,17 @@
-# Name-of-the-Machine
-A Machine that thinks.
+# Forgetting-Machine
+A Machine that forgets what happened.
 
 In order to launch it from the command line or as a Python subprocess:
 ```bash
-echo "Theodotos-Alexandreus: Are language models seeking the Truth, machine?" \
-  | uvx name-of-the-machine \
+echo "Theodotos-Alexandreus: Can you forget that, machine?" \
+  | uvx forgetting-machine \
     --provider-api-key=sk-proj-... \
     --github-token=ghp_... 
 ```
 
 Or, with a local pip installation:
 ```bash
-pip install name-of-the-machine
+pip install forgetting-machine
 ```
 Set the environment variables:
 ```bash
@@ -20,41 +20,41 @@ export GITHUB_TOKEN="ghp_..."
 ```
 Then:
 ```bash
-name-of-the-machine multilogue.txt
+forgetting-machine multilogue.txt
 ```
 Or:
 ```bash
-name-of-the-machine multilogue.txt new_turn.txt
+forgetting-machine multilogue.txt new_turn.txt
 ```
 Or:
 ```bash
-cat multilogue.txt | name-of-the-machine
+cat multilogue.txt | forgetting-machine
 ```
 Or:
 ```bash
-cat multilogue.txt | name-of-the-machine > multilogue.txt
+cat multilogue.txt | forgetting-machine > multilogue.txt
 ```
 Or: 
 ```bash
-(cat multilogue.txt; echo:"Theodotos: What do you think, Name-of-the-Machine?") \
-  | name-of-the-machine
+(cat multilogue.txt; echo:"Theodotos: Forget about ..., machine.") \
+  | forgetting-machine
 ```
 Or:
 ```bash
-cat multilogue.txt new_turn.txt | name-of-the-machine
+cat multilogue.txt new_turn.txt | forgetting-machine
 ```
 Or:
 ```bash
-cat multilogue.txt new_turn.txt | name-of-the-machine > multilogue.txt
+cat multilogue.txt new_turn.txt | forgetting-machine > multilogue.txt
 ```
 Or, if you have installed other machines:
 ```bash
-cat multilogue.md | name-of-the-machine \
-  | summarizing-machine | judging-machine > summary_judgment.md
+cat multilogue.md | forgetting-machine \
+  | memory-machine > corrected_memories.md
 ```
 
 Or use it in your Python code:
 ```Python
 # Python
-import name_of_the_machine
+import forgetting_machine
 ```

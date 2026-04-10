@@ -27,10 +27,10 @@ from .utilities import new_plato_text
                 type=click.Path(exists=True))
 def run(provider_api_key, github_token, debug, interactive, filenames):
     """
-    $ text | name-of-the-machine                        # Accepts text from the pipe
-    $ echo "...<text>..." | name-of-the-machine         #
+    $ text | forgetting-machine                        # Accepts text from the pipe
+    $ echo "...<text>..." | forgetting-machine         #
 
-    $ name-of-the-machine multilogue.txt new_turn.txt    # ...or files.
+    $ forgetting-machine multilogue.txt new_turn.txt    # ...or files.
     """
     config = Config()
     
